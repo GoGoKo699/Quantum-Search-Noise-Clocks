@@ -51,7 +51,7 @@ After the first observed flag, keep the logical search state in protected worksp
 Accumulate
 
 ```math
-M=\operatorname{round}
+M=\mathrm{round}
 \left(\frac{\pi}{4\arcsin(N^{-1/2})}-\frac12\right)
 =\Theta(\sqrt N)
 ```
@@ -96,7 +96,7 @@ Fix
 ```math
 \alpha>1,\qquad
 \beta>\max\{1,\alpha-1\},\qquad
-0<c_L<\tfrac12.
+0\lt c_L\lt\tfrac12.
 ```
 
 Let $`P_s`$ be the smooth Pareto law and $`P_a`$ the [alternating-hazard law](predictable-queries.md#alternating-hazard-theorem). Both have positive mass at every positive integer. Write their finite means as $`\mu_i`$ and their positive tail coefficients as $`C_i`$, so
@@ -111,7 +111,7 @@ with $`C_s=1`$.
 Choose any
 
 ```math
-0<c_*<\min\{C_s,C_a\},
+0\lt c_*\lt\min\{C_s,C_a\},
 \qquad
 \lambda_i=c_*/C_i\in(0,1).
 ```

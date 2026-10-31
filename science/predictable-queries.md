@@ -13,7 +13,7 @@ Fix
 ```math
 \alpha>1,\qquad
 \beta>\max\{1,\alpha-1\},\qquad
-0<c_L<\tfrac12.
+0\lt c_L\lt\tfrac12.
 ```
 
 Define the hazard at every nonnegative integer age by
@@ -130,7 +130,7 @@ Let
 
 ```math
 \vartheta_N=\arcsin(N^{-1/2}),\qquad
-M=\operatorname{round}
+M=\mathrm{round}
 \left(\frac{\pi}{4\vartheta_N}-\frac12\right).
 ```
 

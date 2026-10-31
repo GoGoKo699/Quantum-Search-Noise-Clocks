@@ -131,7 +131,7 @@ Dropping the condition that no earlier age crossed the threshold can only increa
 \begin{aligned}
 \mathbb E\Psi_\sigma
 &\le\frac{C_c}{N}\sum_{t=1}^{T}
-\mathbb E[(A_t+1)\mathbf1_{\{A_t<R\}}]\\
+\mathbb E[(A_t+1)\mathbf1_{\{A_t\lt R\}}]\\
 &=\frac{C_cT}{\mu N}\sum_{\ell=1}^{R}\ell S(\ell)
 \le\frac{C_cTM_R}{\mu N}.
 \end{aligned}
