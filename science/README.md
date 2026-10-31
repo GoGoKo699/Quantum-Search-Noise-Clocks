@@ -18,6 +18,8 @@ A noise clock supplies two kinds of information: a distribution of time between 
 
 The [related-work account](../references/related-work.md) states the proof lineage and the difference from the closest sources. [Verification](../verification/README.md) gives runnable channel and renewal checks with their actual outputs.
 
+The [learning route](../learning/README.md) connects Childs's ideal-search foundations to these pages through one source bridge and a project-defined map of 30 milestones.
+
 ## Logical dependencies
 
 The common model fixes the meaning of all query counts. The ARS local potential and terminal separation give two converse routes: a stopped occupation estimate for the global harmonic-hazard class, and a capped inverse-hazard estimate for the alternating family. Independent paired-interval trials match the first route. Coherent state parking and predictable active slots match the second. Finite-prefix probability mixtures then equalize the mean and leading tail without changing either asymptotic exponent.
