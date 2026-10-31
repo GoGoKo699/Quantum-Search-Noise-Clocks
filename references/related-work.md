@@ -4,13 +4,13 @@ Machine-readable entries for the citation keys below are in [bibliography.bib](b
 
 This project studies zero-or-one marked-item search when a perfect bit query is followed by complete dephasing of its index register at the events of an external stationary renewal process. An event flag becomes available after the affected query. Every call advances the noise clock and is charged, including calls made while the logical search state is stored in protected workspace. These conventions specify the information and timing resources available to the algorithm.
 
-The first main result concerns a fixed gap distribution with finite mean $\mu$, survival function $S(\ell)=\Pr(L\geq\ell)$, and a global lower bound $h(a)\geq c/(a+1)$ on its conditional event hazard at every reachable age. For fixed error below $1/2$, its optimal query cost is
+The first main result concerns a fixed gap distribution with finite mean $`\mu`$, survival function $`S(\ell)=\Pr(L\geq\ell)`$, and a global lower bound $`h(a)\geq c/(a+1)`$ on its conditional event hazard at every reachable age. For fixed error below $`1/2`$, its optimal query cost is
 
-$$
+```math
 Q(N)=\Theta\!\left(
  \frac{\mu N}{\mathbb E\min\{L^2,N\}}
 \right).
-$$
+```
 
 Constants can depend on the fixed noise law and the error target. A second result shows why the hazard assumption matters: two full-support renewal laws can have exactly the same mean and asymptotic power-law tail, including its leading coefficient, and nevertheless yield different optimal search exponents. Thus the moment formula describes a specified regularity class; it is not a characterization of all renewal noise.
 
@@ -18,21 +18,21 @@ Constants can depend on the fixed noise law and the error target. A second resul
 
 Agarwal, Rao and Song [ARS] already formulate arbitrary algorithm-independent correlated schedules, with index dephasing after the query and flags revealed afterward. Their Section 6 supplies the applicable quantum converse. In the search specialization, Lemmas 6.7–6.8 provide a bounded potential, a constant terminal separation, and conditional drift
 
-$$
+```math
 \mathbb E[\Delta\Psi_t\mid\mathcal F_{t-1}]
 \leq \frac{12}{N}+\frac{12u_t}{\sqrt N}
      -2p_t u_t^2,\qquad 0\leq u_t\leq1.
-$$
+```
 
 Their framework already identifies predictable conditional rates as the relevant schedule information and warns against using only hindsight coherent-run lengths. It treats a time-dependent independent-noise search example and explicitly leaves applications to temporal-memory processes open.
 
-We use this inequality with $p_t=h(A_t)$. The new analysis stops the potential before an old-age excursion, controls the stationary initial interval and subsequent threshold crossings, and matches the resulting bound with a causal renewal algorithm. The alternating-hazard construction instead combines a capped drift estimate with selective coherent queries across multiple renewal cycles. We do not claim a new quantum adversary framework or the original observation that predictability matters.
+We use this inequality with $`p_t=h(A_t)`$. The new analysis stops the potential before an old-age excursion, controls the stationary initial interval and subsequent threshold crossings, and matches the resulting bound with a causal renewal algorithm. The alternating-hazard construction instead combines a capped drift estimate with selective coherent queries across multiple renewal cycles. We do not claim a new quantum adversary framework or the original observation that predictability matters.
 
 ## Earlier noisy-search algorithms and lower bounds
 
 Regev and Schiff [RS] establish the loss of quantum search speedup under independent oracle omissions. An omitted query and a query followed by index dephasing are different operations, so that theorem does not directly supply the converse used here.
 
-Rosmanis [Ros] proves a lower bound of order $\max\{Np,\sqrt N\}$ for independent noisy queries, including dephasing with error flags. This establishes the important independent-noise comparison: constant independent dephasing destroys the asymptotic quadratic search advantage even when the algorithm learns that an error occurred. The present noise law is temporally correlated and stationary, with parameters fixed as $N$ grows.
+Rosmanis [Ros] proves a lower bound of order $`\max\{Np,\sqrt N\}`$ for independent noisy queries, including dephasing with error flags. This establishes the important independent-noise comparison: constant independent dephasing destroys the asymptotic quadratic search advantage even when the algorithm learns that an error occurred. The present noise law is temporally correlated and stationary, with parameters fixed as $`N`$ grows.
 
 Vrana, Reeb, Reitzner and Wolf [VRRW] develop noisy-search algorithms built from finite Grover runs, measurement, verification and repetition, including algorithms that do not require the noise strength as input. Their principal lower bounds concern collective depolarizing noise. The finite-run search subroutine and check-and-repeat architecture are established ingredients. Here the trial durations are constrained by an external renewal clock, and converting renewal rewards into a fixed worst-case query budget requires explicit treatment of charged dummy calls and the initial stationary residual interval.
 
@@ -58,25 +58,25 @@ The Markov-omission theorem is not used as a proof input. Its hidden-state recur
 
 ## What the two theorems establish together
 
-For a smooth power-law survival $S(\ell)\asymp\ell^{-\alpha}$, with the stated global hazard condition, the resource formula yields $N^{\alpha/2}$ for $1<\alpha<2$, $N/\log N$ at $\alpha=2$, and $N$ for $\alpha>2$. The stopped argument also treats the finite-mean boundary $S(\ell)\asymp[\ell(\log\ell)^p]^{-1}$, $p>1$, giving $\sqrt N(\log N)^p$.
+For a smooth power-law survival $`S(\ell)\asymp\ell^{-\alpha}`$, with the stated global hazard condition, the resource formula yields $`N^{\alpha/2}`$ for $`1<\alpha<2`$, $`N/\log N`$ at $`\alpha=2`$, and $`N`$ for $`\alpha>2`$. The stopped argument also treats the finite-mean boundary $`S(\ell)\asymp[\ell(\log\ell)^p]^{-1}`$, $`p>1`$, giving $`\sqrt N(\log N)^p`$.
 
-For alternating hazards of orders $a^{-\beta}$ and $2\alpha/a$, with $\beta>\max\{1,\alpha-1\}$, the gap survival still has exponent $\alpha$, while the optimal cost becomes
+For alternating hazards of orders $`a^{-\beta}`$ and $`2\alpha/a`$, with $`\beta>\max\{1,\alpha-1\}`$, the gap survival still has exponent $`\alpha`$, while the optimal cost becomes
 
-$$
+```math
 Q(N)=\Theta\!\left(N^{\,1/2+(\alpha-1)/(2\beta)}\right).
-$$
+```
 
-Positive mixtures with finite-support distributions make the smooth and alternating laws have a common mean $\mu_*$ and a common tail coefficient $c_*>0$:
+Positive mixtures with finite-support distributions make the smooth and alternating laws have a common mean $`\mu_*`$ and a common tail coefficient $`c_*>0`$:
 
-$$
+```math
 \mathbb E L_s=\mathbb E L_a=\mu_*,
 \qquad
 \Pr(L_s\geq\ell)\sim\Pr(L_a\geq\ell)\sim c_*\ell^{-\alpha}.
-$$
+```
 
-The mixture changes only a finite prefix of each hazard sequence. Both laws retain full support and their proved search exponents. They therefore have exactly the same stationary event rate $1/\mu_*$, the same isolated single-call marginal including its flag, and the same moment-finiteness thresholds.
+The mixture changes only a finite prefix of each hazard sequence. Both laws retain full support and their proved search exponents. They therefore have exactly the same stationary event rate $`1/\mu_*`$, the same isolated single-call marginal including its flag, and the same moment-finiteness thresholds.
 
-For example, $\alpha=3,\beta=4$ gives such a matched pair with costs $N$ and $N^{3/4}$, although both gap distributions have finite variance. Every finite-age hazard is positive. The faster algorithm accumulates useful coherent queries at low-risk ages while protecting the state during other charged calls; it receives no advance warning of the next event. Equality of the leading asymptotic tail is not equality of the entire survival sequence or of the numerical values of higher finite moments.
+For example, $`\alpha=3,\beta=4`$ gives such a matched pair with costs $`N`$ and $`N^{3/4}`$, although both gap distributions have finite variance. Every finite-age hazard is positive. The faster algorithm accumulates useful coherent queries at low-risk ages while protecting the state during other charged calls; it receives no advance warning of the next event. Equality of the leading asymptotic tail is not equality of the entire survival sequence or of the numerical values of higher finite moments.
 
 These conclusions concern the stated oracle interface. Protected memory, ideal controls, post-query flags and a query-driven clock are substantive assumptions. They do not imply the same behavior for noise acting continuously on all memory, or for a fixed finite cutoff of the heavy tail.
 

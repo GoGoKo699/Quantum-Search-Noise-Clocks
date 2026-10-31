@@ -4,6 +4,10 @@ Scientific question: optimal zero-or-one-mark search under a fixed stationary re
 
 - Overview and results: README.md
 - Connected scientific route: science/README.md
+- Learning entrypoint and reading routes: learning/README.md
+- Single educational anchor, Childs (17 April 2025), and verified source sections: learning/anchor.md
+- Translation from ideal search to the renewal-clock model and its proof dependencies: learning/bridge.md
+- Project-defined understanding map, exactly M01 through M30: learning/milestones.md
 - Exact oracle, flag, memory, clock and error assumptions: science/model.md
 - Imported ARS lemma and age-conditioning argument: science/progress-bound.md
 - Global-harmonic-hazard truncated-moment theorem: science/renewal-law.md
@@ -15,3 +19,5 @@ Scientific question: optimal zero-or-one-mark search under a fixed stationary re
 - Executed scientific checks and reproduction: verification/README.md, verification/check_models.py and verification/results.json
 
 Keep the whole charged query clock, initially hidden stationary age, post-query flags, protected workspace and unique-mark promise attached to the results. Equal asymptotic tail and mean do not mean equal complete survival sequences or equal higher numerical moments. The quantum progress method and predictable-hazard principle are inherited from ARS. Numerical agreement is not a proof of an all-adaptive converse.
+
+For the scientific story, read README.md, science/model.md, science/renewal-law.md, science/predictable-queries.md, science/comparisons.md and science/interpretation.md in that order, using science/progress-bound.md for the imported converse. For study, begin with learning/README.md and learning/bridge.md, then use the ordered dependencies in learning/milestones.md. Childs is the sole educational anchor; cited research papers retain their distinct role as proof dependencies and related work. The map describes common understanding targets. Personal teaching sessions, answers and learner progress are outside this repository.
