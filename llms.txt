@@ -1,0 +1,17 @@
+# Quantum Search Noise Clocks
+
+Scientific question: optimal zero-or-one-mark search under a fixed stationary renewal index-dephasing clock.
+
+- Overview and results: README.md
+- Connected scientific route: science/README.md
+- Exact oracle, flag, memory, clock and error assumptions: science/model.md
+- Imported ARS lemma and age-conditioning argument: science/progress-bound.md
+- Global-harmonic-hazard truncated-moment theorem: science/renewal-law.md
+- Power-law and logarithmic examples: science/examples.md
+- Full-support alternating-hazard theorem and causal scheduling algorithm: science/predictable-queries.md
+- Equal mean/leading-tail comparison and zero-hazard obstruction: science/comparisons.md
+- Classical cost and implementation boundaries: science/interpretation.md
+- Attribution and source distinctions: references/related-work.md and references/bibliography.bib
+- Executed scientific checks and reproduction: verification/README.md, verification/check_models.py and verification/results.json
+
+Keep the whole charged query clock, initially hidden stationary age, post-query flags, protected workspace and unique-mark promise attached to the results. Equal asymptotic tail and mean do not mean equal complete survival sequences or equal higher numerical moments. The quantum progress method and predictable-hazard principle are inherited from ARS. Numerical agreement is not a proof of an all-adaptive converse.
